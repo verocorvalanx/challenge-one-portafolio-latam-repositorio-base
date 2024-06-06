@@ -1,0 +1,886 @@
+/*reset */
+
+:root {
+    --col-de-fondo: #F5F5F5;
+    --col-de-link: #000;
+    --col-botones: #2A7AE4;
+    --col-segundo: #EAF2FD;
+    --col-cuadrado: #FFFFFF;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--col-de-fondo);
+    font-family: 'Raleway';
+    color: #464646;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    line-height: auto;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #464646;
+}
+
+.boton_demo a {
+    color: white;
+}
+
+.boton_rep a {
+    color: var(--col-botones);
+}
+
+.boton_submit:hover {
+    cursor: pointer;
+}
+
+/*Cabecera*/
+
+header {
+    display: flex;
+    top: 0;
+    justify-content: space-around;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+}
+
+
+.logo-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.menu ul {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    gap: 32px;
+    font-size: 16px;
+
+}
+
+
+.menu ul li:last-child {
+    font-weight: bold;
+}
+
+.lista-menu a:hover {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/*Profile*/
+
+.profile_title {
+    flex-wrap: wrap;
+
+}
+
+.profile_title h1 {
+    font-size: 52px;
+    font-weight: bold;
+}
+
+.profile_title p {
+    font-size: 22px;
+
+}
+
+.lista-profile {
+    display: flex;
+    gap: 32px;
+    padding-left: 0;
+}
+
+.lista-profile li {
+    gap: 4px;
+
+}
+
+.lista-profile a:hover {
+    font-size: 22px;
+    font-weight: bold;
+    color: #3b5c8a;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 30px;
+}
+
+/*About me*/
+
+.about_me {
+    background-color: var(--col-segundo);
+}
+
+.sobre_mi {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    justify-content: space-around;
+    align-items: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 50%;
+
+}
+
+.sobre_mi h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.sobre_mi p {
+    font-size: 16px;
+    line-height: auto;
+}
+
+/*Skills y hobbies*/
+
+.todo_skills_hobbies {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.skills h1 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.hobbies {
+    margin-top: 88px;
+    margin-bottom: 88px;
+}
+
+.hobbies h1 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.skills_cuadrados {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+
+}
+
+.hobbies_cuadrados {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+
+}
+
+.cuadrado {
+    background-color: var(--col-cuadrado);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 176px;
+    height: 174px;
+    position: relative;
+}
+
+.cuadrado:hover {
+    cursor: pointer;
+    width: 186px;
+    height: 184px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.tittle_cuadrado {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cuadrado h5 {
+    margin: 0 0 8px 12px;
+}
+
+.contenido_cuadrado {
+    position: absolute;
+    bottom: 0;
+    padding: 0 0 10px 0;
+}
+
+/*Formación académica*/
+.education {
+    background-color: var(--col-segundo);
+}
+
+.todo_education {
+    text-align: center;
+}
+
+.todo_education h1 {
+    padding-top: 82px;
+    padding-bottom: 32px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding-bottom: 82px;
+}
+
+.cuadrado-card {
+    background-color: #FFFFFF;
+    width: 368px;
+    height: 286px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description-card {
+    text-align: start;
+}
+
+.description-card h4 {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 8px 0 8px 0;
+    margin: 0;
+}
+
+.description-card p {
+    font-size: 16px;
+    margin: 0;
+}
+
+
+
+/*Experiencia profesional*/
+
+.todo_projects {
+    text-align: center;
+
+
+}
+
+.todo_projects h1 {
+    font-size: 32px;
+    font-weight: bold;
+    padding-bottom: 32px;
+
+}
+
+.cards_projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: center;
+    margin-bottom: 32px;
+
+}
+
+.challenge {
+    display: flex;
+    gap: 16px;
+    width: 90%;
+}
+
+.challenge_description {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-self: center;
+    text-align: left;
+    flex-wrap: wrap;
+
+}
+
+
+.challenge_description h4 {
+    display: flex;
+    margin: 0;
+    font-size: 22px;
+    font-weight: bold;
+
+}
+
+.challenge_description p {
+    margin: 0;
+    font-size: 16px;
+
+}
+
+.challenge_botones {
+    display: flex;
+    gap: 16px;
+}
+
+.boton {
+    padding: 16px;
+    border-radius: 0;
+    border: none;
+    transition-duration: 0.4s;
+
+}
+
+.boton:hover {
+    font-size: 16px;
+}
+
+.boton_rep {
+    background-color: var(--col-de-fondo);
+    color: var(--col-botones);
+    border: #2A7AE4 1px solid;
+    font-size: 14px;
+}
+
+
+
+.boton_demo {
+    background-color: #2A7AE4;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+/*Formulario*/
+
+
+.mensaje {
+    resize: none;
+    padding-top: 15px;
+    border: none;
+    border-radius: 4px;
+    padding-left: 10px;
+    border-bottom: solid 2px #E5E5E5;
+}
+
+.form {
+    padding: 64px 64px 64px 64px;
+    background-color: var(--col-segundo);
+}
+
+.todo-form {
+    margin: 0 10% 0 10%;
+    display: flex;
+    gap: 16px;
+}
+
+.contacto-description h1 {
+    margin: 0;
+    margin-bottom: 8px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.contacto-description p {
+    margin: 0;
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form_inputs {
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.boton_form {
+    padding-top: 32px;
+}
+
+.mensaje {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.input {
+    border: none;
+    height: 56px;
+    border-radius: 4px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-bottom: solid 2px #E5E5E5;
+    cursor: pointer;
+}
+
+
+
+.input:focus {
+    outline: none;
+    border-bottom: solid 2px var(--col-botones);
+    caret-color: #2A7AE4;
+}
+
+
+.mensaje::placeholder {
+    font-size: 16px;
+    font-family: 'Raleway';
+    color: #A2A2A2;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.mensaje:focus {
+    outline: none;
+    border-bottom: solid 2px var(--col-botones);
+}
+
+/*(floating placeholder/label)*/
+
+label {
+    font-size: 16px;
+    font-family: 'Raleway';
+    color: #A2A2A2;
+    line-height: 20px;
+    font-weight: 400;
+    transform: translate(0.45rem, -3.3rem);
+    transition: all 0.2s ease-out;
+    width: 60px;
+}
+
+input:focus+label {
+    color: #2A7AE4;
+    font-size: 12px;
+    transform: translate(0.4rem, -4.5rem);
+    padding-bottom: 8px;
+}
+
+input:not(:placeholder-shown)+label {
+    color: #A2A2A2;
+    font-size: 12px;
+    transform: translate(0.4rem, -4.5rem);
+    padding-bottom: 8px;
+}
+
+/*Footer*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 16px;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: var(--col-cuadrado);
+
+}
+
+/*--------------Responsive---------------*/
+
+/*Tablet*/
+@media (max-width: 768px) {
+
+    /*Cabecera*/
+    .menu ul li:nth-child(1),
+    .menu ul li:nth-child(2),
+    .menu ul li:nth-child(3),
+    .menu ul li:nth-child(4),
+    .menu ul li:nth-child(5) {
+        display: none;
+    }
+
+    .lista-menu a:hover {
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    /*Profile*/
+    .profile_title h1 {
+        font-size: 22px;
+    }
+
+    .profile_title p {
+        font-size: 16px;
+    }
+
+    .lista-profile li {
+        font-size: 16px;
+    }
+
+    .lista-profile a:hover {
+        font-size: 16px;
+        color: #3b5c8a;
+    }
+
+    .profile-img {
+        width: 146px;
+        height: 146px;
+    }
+
+    .profile {
+        margin: 30px;
+    }
+
+    /*About me*/
+
+    .sobre_mi {
+        margin: 30px;
+        width: 90%;
+        padding: 5px;
+    }
+
+    .sobre_mi h1 {
+        padding-bottom: 16px;
+        margin-bottom: 0;
+        font-size: 22px;
+    }
+
+    .sobre_mi p {
+        font-size: 14px;
+    }
+
+    /*Skills y Hobbies*/
+    .cuadrado {
+        width: 224px;
+        height: 118px;
+    }
+
+    .cuadrado:hover {
+        cursor: pointer;
+        width: 226px;
+        height: 120px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    }
+
+    .todo_skills_hobbies h1 {
+        font-size: 22px;
+        margin: 30px;
+    }
+
+    .hobbies {
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+    .skills_cuadrados {
+        flex-wrap: wrap;
+
+    }
+
+    .hobbies_cuadrados {
+        flex-wrap: wrap;
+    }
+
+    .todo_skills_hobbies {
+        margin: 0;
+    }
+
+    /*Formación académica*/
+
+    .todo_education h1 {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .cards {
+        padding: 0 32px 32px 32px;
+    }
+
+    .cuadrado-card {
+        width: 224px;
+        height: 118px;
+    }
+
+    .ufpr {
+        width: 84px;
+        height: 58px;
+    }
+
+    .alura {
+        width: 70px;
+        height: 48px;
+    }
+
+    .afrj {
+        width: 102px;
+        height: 60px;
+    }
+
+    .description-card h4 {
+        font-size: 16px;
+    }
+
+    .description-card p {
+        font-size: 14px;
+    }
+
+    /*Experiencia profesional*/
+
+
+    .cards_projects {
+        margin-left: 32px;
+        margin-right: 32px;
+        align-items: normal;
+
+    }
+
+    .todo_projects h1 {
+        font-size: 22px;
+        padding-bottom: 16px;
+        margin-bottom: 0;
+        padding-top: 32px;
+        margin-top: 0;
+    }
+
+    .challenge {
+        flex-direction: column;
+
+    }
+
+    .challenge_tittle {
+        font-size: 16px;
+    }
+
+    .challenge_p {
+        font-size: 14px;
+    }
+
+    .imgs {
+        width: 704px;
+    }
+
+    .challenge_description {
+        display: flex;
+        align-self: start;
+    }
+
+    .challenge_botones {
+        font-size: 14px;
+    }
+
+    .boton {
+        padding: 12px 16px 12px 16px;
+    }
+
+    .challenge_juego,
+    .challenge_oracle {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .boton {
+
+        transition-duration: 0.4s;
+
+    }
+
+    .boton:hover {
+        font-size: 16px;
+    }
+
+    /*Form*/
+
+    .img-contacto {
+        display: none;
+    }
+
+    .form {
+        padding: 32px;
+    }
+
+    .todo-form {
+        margin: 0;
+        padding: 0;
+    }
+
+    .contacto-description h1 {
+        font-size: 22px;
+    }
+
+    .contacto-description p {
+        font-size: 16px;
+    }
+
+    .input {
+        width: 600px;
+    }
+
+    .mensaje {
+        width: 600px;
+    }
+
+}
+
+/*Mobile*/
+@media (max-width: 425px) {
+
+    /*Cabecera*/
+    .menu ul li:last-child {
+        font-weight: normal;
+    }
+
+    .lista-menu a:hover {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    /*Profile*/
+
+    .profile {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        margin: 5px 20px 20px 20px;
+    }
+
+    .lista-profile a:hover {
+        font-size: 15px;
+        color: #3b5c8a;
+    }
+
+    .profile_title p {
+        font-size: 14px;
+    }
+
+    .lista-profile li {
+        font-size: 14px;
+    }
+
+    .profile_title h1 {
+        margin-top: 0;
+    }
+
+    /*Sobre mí*/
+
+    .sobre_mi {
+        margin: 16px;
+    }
+
+    .sobre_mi h1 {
+        padding-bottom: 10px;
+    }
+
+    /*Skills y hobbies*/
+
+    .skills_cuadrados {
+        flex-direction: column;
+        display: grid;
+        grid-template-areas:
+            "html5 js"
+            "php nodejs"
+            "react css"
+        ;
+
+    }
+
+    .hobbies_cuadrados {
+        flex-direction: column;
+        display: grid;
+        grid-template-areas:
+            "patinaje bajo"
+            "musica series"
+            "cocinar fotos"
+        ;
+    }
+
+    .cuadrado {
+        width: 156px;
+        height: 118px;
+    }
+
+    .cuadrado:hover {
+        cursor: pointer;
+        width: 158px;
+        height: 120px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    }
+
+    .todo_skills_hobbies {
+        margin: 16px;
+
+    }
+
+    /*Formación académica*/
+    .todo_education {
+        margin: 0;
+    }
+
+    .todo_education h1 {
+        margin: 0;
+    }
+
+    .cards {
+        padding: 0 32px 32px 32px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cuadrado-card {
+        width: 296px;
+        height: 118px;
+    }
+
+    /*Experiencia profesional*/
+    .imgs {
+        width: 361px
+    }
+
+    .challenge_description h4 {
+        font-size: 16px;
+    }
+
+    .challenge_description p {
+        font-size: 14px;
+    }
+
+    .boton {
+        font-size: 14px;
+    }
+
+    .boton:hover {
+        font-size: 16px;
+    }
+
+    /*Formulario*/
+
+    .contacto-form {
+        width: 296px;
+    }
+
+    .input {
+        width: 300px;
+    }
+
+    .mensaje {
+        width: 300px;
+    }
+
+}
